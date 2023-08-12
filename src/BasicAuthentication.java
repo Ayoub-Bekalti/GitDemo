@@ -13,6 +13,7 @@ public class BasicAuthentication {
     	System.setProperty("webdriver.chrome.driver","E:/Cdriver/chromedriver.exe");
 		
 		ChromeDriver driver = new ChromeDriver();
+		
 		//predicate, consumer
 		Predicate<URI> uriPredicate =uri ->  uri.getHost().contains("httpbin.org");
 		

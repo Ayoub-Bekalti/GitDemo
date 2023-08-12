@@ -16,6 +16,7 @@ public class NetworkMocking {
 		ChromeDriver driver = new ChromeDriver();
 		
 		DevTools devTools = driver.getDevTools();
+		
 		devTools.createSession();
 		
 		devTools.send(Fetch.enable(Optional.empty(), Optional.empty()));
@@ -43,7 +44,7 @@ public class NetworkMocking {
 		driver.findElement(By.cssSelector("button[routerlink*='library']")).click();
 		Thread.sleep(3000);
 		
-		System.out.println(driver.findElement(By.cssSelector("p")).getText());
+		//System.out.println(driver.findElement(By.cssSelector("p")).getText());
 		
 		
 		
