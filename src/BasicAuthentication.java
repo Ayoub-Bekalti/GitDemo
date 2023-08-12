@@ -9,7 +9,7 @@ public class BasicAuthentication {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		
+		//new something
     	System.setProperty("webdriver.chrome.driver","E:/Cdriver/chromedriver.exe");
 		
 		ChromeDriver driver = new ChromeDriver();
@@ -19,7 +19,7 @@ public class BasicAuthentication {
 		
 		((HasAuthentication)driver).register(uriPredicate,UsernameAndPassword.of("foo", "bar"));
 		driver.get("http://httpbin.org/basic-auth/foo/bar");
-		
+		driver.get("new code");
 		   
 		
 	}
